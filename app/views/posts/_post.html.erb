@@ -19,4 +19,17 @@
     <%= post.published_at %>
   </p>
 
+  <p>
+    <strong> View Statiscs :</strong>
+    <%= post.view_stat %>
+  </p>
+
+  <ul>
+    <%- post.comments.each do |c| %>
+      <li>
+        <%= c.title %>
+      </li>
+    <% end %>
+  </ul>
+
 </div>
